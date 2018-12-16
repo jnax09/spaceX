@@ -28,8 +28,8 @@ class App extends Component {
             />{" "}
             <Route exact path="/" component={Launches} />{" "}
             <Route exact path="/launch/:flight_number" component={Launch} />{" "}
-          </div>{" "}
-        </Router>{" "}
+          </div>
+        </Router>
       </ApolloProvider>
     )
   }
