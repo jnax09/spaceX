@@ -27,8 +27,10 @@ class App extends Component {
                 display: 'block'
               }}
             />
-            <Route exact path="/" component={Launches} />
-            <Route exact path="/launch/:flight_number" component={Launch} />
+            <div>
+              <Route exact path="/" component={Launches} />
+              <Route exact path="/launch/:flight_number" component={Launch} />
+            </div>
           </div>
         </Router>
       </ApolloProvider>
