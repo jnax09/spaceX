@@ -8,9 +8,10 @@ import Launches from './component/Launches';
 import Launch from './component/Launch';
 
 const client = new ApolloClient({
-  uri: '/graphql',
+  uri: '/graphql'
 });
 
+// eslint-disable-next-line react/prefer-stateless-function
 class App extends Component {
   render() {
     return (
@@ -23,11 +24,11 @@ class App extends Component {
               style={{
                 width: 300,
                 margin: 'auto',
-                display: 'block',
+                display: 'block'
               }}
-            />{' '}
-            <Route exact path="/" component={Launches} />{' '}
-            <Route exact path="/launch/:flight_number" component={Launch} />{' '}
+            />
+            <Route exact path="/" component={Launches} />
+            <Route exact path="/launch/:flight_number" component={Launch} />
           </div>
         </Router>
       </ApolloProvider>
